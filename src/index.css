@@ -18,6 +18,97 @@
 
 body {
   margin: 0;
-  text-align: center;
+  /* text-align: center; */
   color: #e6ddf9;
+}
+
+.app {
+  position: relative; /* Ensure the modal is positioned relative to this container */
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  max-width: 90vw;
+  margin: 0 auto;
+  border-bottom: 1px solid white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+.btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: rgb(217, 217, 217);
+  text-align: center;
+  font-weight: 700;
+  border: none;
+}
+
+.modal {
+  border: 1px solid white;
+  width: 40%;
+  max-width: 90%; /* Ensures it doesn't exceed the screen width */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the modal */
+  background-color: rgb(167, 220, 238);
+  color: #4c05d0;
+  padding: 20px; /* Adds some spacing inside the modal */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  border-radius: 8px; /* Optional: Rounds the corners */
+  display: none;
+}
+
+.close {
+  float: right;
+}
+
+.active {
+  display: block;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  padding: 5px;
+}
+
+.form-btn {
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+  float: right;
+}
+
+.welcomeText {
+  text-align: center;
+}
+
+.postList {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.singlePost {
+  /* border: 1px solid white; */
+  max-width: 300px;
+  width: 30%;
+  background-color: #4c05d0;
+  box-shadow: 1px 1px 4px black;
+  padding: 8px 10px;
+  border-radius: 10px;
 }

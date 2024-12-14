@@ -1,5 +1,15 @@
+import Header from "./components/Header";
+import Modal from "./components/Modal";
+import PostList from "./components/PostList";
+
 function App() {
-  return <h1>Hello World!</h1>;
+  return (
+    <div className="app">
+      <Header />
+      <PostList />
+      <Modal />
+    </div>
+  );
 }
 
 export default App;
